@@ -6,3 +6,5 @@ The animation uses html div elements to display the different colour changes.
 Some styling changes will be made. Also animations will be reduced for better performance.
 
 Click or scroll on the page in order to start an animation "piece".
+
+[hosted on github pages](https://izidormaklary.github.io/stargate-seq-js/)
