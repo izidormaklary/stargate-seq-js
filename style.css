@@ -25,7 +25,7 @@ h1 {
 
 body {
 
-
+    height: 400vh;
     background-color: black;
 
 }
@@ -37,8 +37,13 @@ body {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    perspective: 50px;
-    filter: blur(4px);
+    perspective-origin: center;
+    perspective: 60px;
+
+    background-image:  radial-gradient(150px 300px, #dddcdc 30%, black 110%);
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(4px) ;
 }
 
 #container1, #container2 {
@@ -46,16 +51,15 @@ body {
     right: -10vw;
     transition: 2s;
     height: 100vh;
-    width: 70vw;
-    transform-style: preserve-3d;
-    transform: rotateY(45deg);
+    width: 50vw;
+    transform: rotateY(90deg) translateX(10vw);
     z-index: -1;
 
 }
 
 #container2 {
     right: revert;
-    left: 0vw;
+    left: -10vw;
 
 }
 
@@ -70,6 +74,15 @@ body {
 }
 
 .cube {
+
+
+    height: 70%;
+    width: 0.7%;
+    margin:0.15%;
+    transition: 30ms;
+}
+.notcuve{
+    background-color: aliceblue;
     height: 70%;
     width: 0.7%;
     margin: 0 0% 15% 0.15%;
